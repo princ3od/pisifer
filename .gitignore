@@ -1,5 +1,7 @@
-data/test_set/*
+data/test_set/**
+data/test_set_ielts/**
 data/train_set/**
+data/train_set_ielts/**
 
 data_set
 models
