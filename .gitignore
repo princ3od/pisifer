@@ -4,6 +4,7 @@ data/train_set/**
 data/train_set_ielts/**
 source/train_data/**
 data/train_data/**
+data/test_data/**
 server/__pycache__
 source/__pycache__
 
