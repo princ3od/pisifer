@@ -31,6 +31,7 @@ def infer(text, top=3, remove_num=False):
         top = 7
     if top < 1:
         top = 1
+    text = text.replace('\n', ' ')
     text = remove_punctuation(text)
     if remove_num:
         text = remove_number(text)
