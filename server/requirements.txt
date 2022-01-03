@@ -1,4 +1,5 @@
 Flask==2.0.1
 flask[async]
+flask_cors
 gensim
 nltk
