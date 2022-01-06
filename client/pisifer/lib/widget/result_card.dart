@@ -12,15 +12,18 @@ class ResultCard extends StatelessWidget {
       child: ListTile(
         leading: Text(
           '${topic.index}.',
-          style: GoogleFonts.nunitoSans(fontSize: 24, fontWeight: FontWeight.bold),
+          style:
+              GoogleFonts.nunitoSans(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         title: Text(
           topic.title.capitalize(),
-          style: GoogleFonts.nunitoSans(fontSize: 16, fontWeight: FontWeight.w600),
+          style:
+              GoogleFonts.nunitoSans(fontSize: 16, fontWeight: FontWeight.w600),
         ),
         trailing: Text(
-          '${topic.percent}%',
-          style: GoogleFonts.nunitoSans(fontSize: 16, fontWeight: FontWeight.w600),
+          '${topic.percent.toStringAsFixed(2)}%',
+          style:
+              GoogleFonts.nunitoSans(fontSize: 16, fontWeight: FontWeight.w600),
         ),
       ),
     );
