@@ -12,10 +12,9 @@ def load_model(filename='d2v_2.model'):
 
 
 def rm_stopwords(tokenized_doc):
-    tok_without_sw = []
-    for txt_tokens in tokenized_doc:
-        tok_without_sw = [
-            word for word in tokenized_doc if not word.lower() in STOPWORDS]
+    tok_without_sw = [
+        word for word in tokenized_doc if word.lower() not in STOPWORDS
+    ]
     return tok_without_sw
 
 def remove_punctuation(raw_text):
